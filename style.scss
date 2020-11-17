@@ -57,6 +57,7 @@
         display: flex;
         justify-content: center;
         letter-spacing: 5px;
+        font-weight: 300;
       }
       .ch {
         position: absolute;
@@ -88,12 +89,13 @@
     width: 75px;
     height: 75px;
     display: inline-block;
-    background-image: url(./img/logooo.png);
+    background-image: url(./img/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
+    top: 54%;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translate(-50%,-50%);
     transition: 0.3s;
     &:hover {
       opacity: 0.75;
@@ -105,16 +107,26 @@
     padding-right: 70px;
     position: absolute;
     right: 0;
-    top: 2px;
+    top: 54%;
+    transform: translateY(-50%);
     img{
-      width: 22px;
+      width: 20px;
+    }
+    a {
+      display: inline-block;
+      padding: 0 10px 0;
+      filter: opacity(100%);
+      transition: 0.5s;
+      &:hover {
+        opacity: 0.4;
+      }
     }
   }
   .order {
     float: right;
     position: absolute;
-    right: 12%;
-    top: 50%;
+    right: 11%;
+    top: 54%;
     transform: translateY(-50%);
     a {
       padding: 0 10px;
@@ -123,6 +135,10 @@
         width: 22px;
         height: 22px;
         filter: invert(55%) sepia(9%) saturate(1966%) hue-rotate(177deg) brightness(95%) contrast(81%);
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }
@@ -222,7 +238,7 @@
     .n-item2 {
       &:hover {
         &:after {
-          content: "1";
+          content: "0";
           width: 26px;
           height: 11.5px;
           background-color: white;
@@ -241,7 +257,7 @@
     .n-item3 {
       &:hover {
         &:after {
-          content: "5";
+          content: "9";
           width: 26px;
           height: 11.5px;
           background-color: white;
@@ -271,7 +287,6 @@
     a {
       display: inline-block;
       text-decoration: none;
-      // color: lightslategrey;
       color: #6a89b9;
       // border: 1px solid yellowgreen;
       position: relative;
@@ -370,6 +385,7 @@
         color: white;
         transition: inherit;
         letter-spacing: 3px;
+        cursor: pointer;
         &:hover {
           border-bottom: 5px solid #fbf7f0;
           transform: translate(0, -5px);
@@ -409,6 +425,8 @@
     img {
       display: inline-block;
       position: absolute;
+      object-fit: contain;
+      // border: 1px solid #000;
     }
     .pic1,
     .pic1-1 {
@@ -423,40 +441,75 @@
       visibility: hidden;
     }
     .pic2 {
-      width: 250px;
-      height: 250px;
-      top: 0;
+      width: 190px;
+      height: 190px;
+      top: 40px;
       left: 50%;
       transform: translate(-50%, 0);
     }
     .pic3 {
-      width: 250px;
-      height: 250px;
-      top: 0;
+      width: 220px;
+      height: 220px;
+      top: 24px;
       left: 50%;
-      transform: translate(-50%, 0) skewX(-5deg) skewY(-2deg);
+      transform: translate(-50%, 0);
     }
     .pic4 {
-      width: 250px;
-      height: 250px;
-      top: 0;
+      width: 200px;
+      height: 200px;
+      top: 50px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .pic5 {
+      width: 200px;
+      height: 200px;
+      top: 30px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .pic6 {
+      width: 220px;
+      height: 240px;
+      top: 10px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .pic7 {
+      width: 220px;
+      height: 220px;
+      top: 30px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .pic8 {
+      width: 230px;
+      height: 230px;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .pic9 {
+      width: 220px;
+      height: 220px;
+      top: 20px;
       left: 50%;
       transform: translate(-50%, 0);
     }
     h3 {
       padding-left: 30px;
       margin-top: 160px;
-      // color: #d7bfa4;
-      color: #556f87;
+      // color: #556f87;
+      color: #004884;
+      // opacity: 0.8;
       font-weight: 500;
       letter-spacing: 1px;
       font-size: 22px;
     }
     h4 {
       padding-left: 30px;
-      // color: #d7bfa4;
-    //   color: rgba(0, 0, 0, 0.6);
       color: #004884;
+      opacity: 0.8;
       font-weight: bolder;
       font-size: 16px;
     }
@@ -467,9 +520,7 @@
         width: 22px;
         height: 22px;
         border-radius: 50%;
-        background-color: #ffe7af;
-        // border: 2px solid wheat;
-        // border: 2px solid whitesmoke;
+        background-color: #fecb6a;
         display: inline-block;
         margin-right: 5px;
         // &:hover {
@@ -480,8 +531,7 @@
         width: 22px;
         height: 22px;
         border-radius: 50%;
-        background-color: #844844;
-        // border: 2px solid #805d5b;
+        background-color: #513525;
         display: inline-block;
         // &:hover {
         //     cursor: pointer;
@@ -491,32 +541,57 @@
         width: 22px;
         height: 22px;
         border-radius: 50%;
-        background-color: #8c2910;
-        // border: 2px solid #805d5b;
+        background-color: #5f3b33;
         display: inline-block;
       }
       .f3 {
         width: 22px;
         height: 22px;
         border-radius: 50%;
-        background-color: #f4e29e;
-        // border: 2px solid #805d5b;
+        background-color: #4d3024;
         display: inline-block;
       }
       .f4 {
         width: 22px;
         height: 22px;
         border-radius: 50%;
-        background-color: #572c1f;
-        // border: 2px solid #805d5b;
+        background-color: #fae87f;
         display: inline-block;
       }
       .f5 {
         width: 22px;
         height: 22px;
         border-radius: 50%;
+        background-color: #e9d58b;
+        display: inline-block;
+      }
+      .f6 {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #95603a;
+        display: inline-block;
+      }
+      .f7 {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
         background-color: #a3533b;
-        // border: 2px solid #805d5b;
+        display: inline-block;
+      }
+      .f8 {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        // background-color: #a3533b;
+        background-color: #9f350b;
+        display: inline-block;
+      }
+      .f9 {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #35090a;
         display: inline-block;
       }
       // .selectf1 {
@@ -527,67 +602,6 @@
       // }
     }
   }
-}
-
-/* 頁尾 */
-footer {
-  padding: 30px 0 5px;
-  background-color: #fbf7f0;
-  margin-top: 50px;
-  text-align: center;
-  position: relative;
-}
-
-.footer-logo {
-  // border: 1px solid #000;
-  width: 300px;
-  height: 70px;
-  display: inline-block;
-  background-image: url(../img/LTlogo-full.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 0.5s;
-  margin-bottom: 30px;
-  text-decoration: none;
-}
-.footer-logo:hover {
-  opacity: 0.4;
-}
-
-.footer-block h4 {
-  color: #024679;
-  line-height: 25px;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 3px;
-  padding-left: 3px;
-}
-.icon img {
-  width: 28px;
-  display: inline-block;
-  margin-top: 20px;
-  // border: 1px solid #000;
-}
-.icon a {
-  display: inline-block;
-  padding: 0 10px 0;
-  filter: opacity(100%);
-  transition: 0.5s;
-  &:hover {
-    opacity: 0.4;
-  }
-}
-footer hr {
-  width: 100%;
-  margin: 10px auto -10px;
-  opacity: 0.3;
-}
-
-footer p {
-  color: #024679;
-  font-size: 14px;
-  margin: 20px 0 5px;
 }
 
 
@@ -606,8 +620,20 @@ footer p {
         width: 400px;
         background-image: url(./img/itemTop.png);
         background-repeat: no-repeat;
+        background-size: contain;
         margin: 0 auto;
-    }
+      }
+      .mainp-itemsub-corna {
+        // border: 1px solid #000;
+        height: 400px;
+        width: 400px;
+        background-image: url(./img/corna-itemsub.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+        position: relative;
+        top: 10%;
+      }
     .cate-itemsubg {
       position: fixed;
       top: 0;
@@ -717,12 +743,10 @@ footer p {
             }
             span {
                 display: inline-block;
-                border: 1px solid #6a89b9;
                 border: 1px solid #004884;
-                color: #6a89b9;
                 color: #004884;
                 border-radius: 5px;
-                padding: 5px 10px;
+                padding: 4px 10px 6px;
                 margin: 5px 10px 0 0;
                 cursor: pointer;
                 transition: 0.2s;
@@ -882,13 +906,14 @@ footer p {
           padding: 10px 15px;
           background-color: transparent;
           color: white;
-          font-size: 14px;
+          font-size: 16px;
           letter-spacing: 5px;
           padding-left: 20px;
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
           transition: inherit;
+          cursor: pointer;
           &:hover {
             border-bottom: 3px solid white;
             transform: translate(-50%,-3px);
@@ -898,7 +923,7 @@ footer p {
             border: none;
             transform: translate(-50%, 0);
             color: #004884;
-            font-size: 14px;
+            font-size: 16px;
             letter-spacing: 5px;
             padding-left: 20px;
             transition: 0.05s;
@@ -987,23 +1012,31 @@ footer p {
       }
     }
   }
-  hr {
+  .hr {
     border: none;
     width: 100%;
     height: 2px;
-    background-color: #b6c6d1;
-    margin-bottom: 30px;
+    background-color: #004884;
+    opacity: 0.3;
+    margin: 10px;
   }
 
   .section2-itemsub {
     .sub-title {
+      // color: #004884;
       text-align: center;
       font-size: 120px;
-      // color: #004884;
       color: rgb(243, 215, 132);
       opacity: 0.3;
       // -webkit-text-stroke: 1px #ebd5b3;
       // -webkit-text-fill-color: transparent;
+      margin-top: 30px;
+    }
+    .sub-title-corna {
+      text-align: center;
+      font-size: 120px;
+      color: #5f3b33;
+      opacity: 0.3;
       margin-top: 30px;
     }
     .madeli-itempage-demo {
@@ -1017,6 +1050,7 @@ footer p {
         object-fit: cover;
       }
     }
+    
     .madeli-itempage {
       // border: 1px solid #000;
       text-align: center;
@@ -1036,6 +1070,10 @@ footer p {
         font-weight: 600;
         letter-spacing: 5px;
         padding-left: 5px;
+      }
+      .ip1-itempage-corna {
+        left: 67%;
+        top: 18%;
       }
 
       // Item-text
@@ -1069,6 +1107,9 @@ footer p {
         left: 55%;
         transform: rotate(-15deg);
       }
+      .il1-itempage-corna {
+        left: 57%;
+      }
       .il2-itempage {
         display: inline-block;
         width: 200px;
@@ -1080,6 +1121,11 @@ footer p {
         left: 50%;
         transform: translateX(-50%);
       }
+      .il2-itempage-corna {
+        width: 200px;
+        border-top: 12px dotted #004884;
+        top: -10px;
+      }
       .il3-itempage {
         display: inline-block;
         width: 1px;
@@ -1089,6 +1135,14 @@ footer p {
         position: absolute;
         top: 5%;
         left: 61%;
+      }
+    }
+    .corna-itempage {
+      img {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 50px;
       }
     }
     .madeli-itempage-wrap {
@@ -1303,3 +1357,49 @@ footer p {
       transform: translate(-85px,-30px);
     }
   }
+
+
+
+/* 頁尾 */
+footer {
+  padding: 30px 0 5px;
+  background-color: #fbf7f0;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+
+  .footer-block h4 {
+    color: #004884;
+    line-height: 25px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding-left: 3px;
+  }
+  .icon img {
+    width: 28px;
+    display: inline-block;
+    margin-top: 20px;
+    // border: 1px solid #000;
+  }
+  .icon a {
+    display: inline-block;
+    padding: 0 10px 0;
+    filter: opacity(100%);
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+  hr {
+    width: 100%;
+    margin: 10px auto -10px;
+    opacity: 0.3;
+  }
+
+  p {
+    color: #004884;
+    font-size: 14px;
+    margin: 20px 0 5px;
+  }
+}

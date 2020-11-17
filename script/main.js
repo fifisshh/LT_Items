@@ -8,6 +8,20 @@ $(document).ready(function(){
     $('#home').addClass('active');
 });
 
+// many alerts
+// $(".order").click(function(){
+    // alert("X 此功能尚未解鎖");
+// });
+
+$(".n-item1").click(function(){
+    alert("翻到1是偉大的夢想");
+});
+$(".n-item2").click(function(){
+    alert("敬請期待產品上市");
+});
+$(".n-item3").click(function(){
+    alert("小編努力上架中...");
+});
 
 // 瑪德蓮口味選擇
 // $('.f2').on('click', function(){
@@ -21,7 +35,7 @@ $(document).ready(function(){
 //     $(".pic1").attr("src","../img/item1.png"); 
 // });
 
-// 原味(class=f1)為預設
+// 商品分頁－原味(class=f1)為預設
 $(document).ready(function(){
     $('.def-itemsub').addClass('selectf1-itemsub');    
 });
@@ -120,3 +134,11 @@ $(".item-close").click(function() {
         // document.getElementById("wrapper").style.display = "block";
     // });  
 //   }
+
+function pageDirectToMadi() {
+    window.location.href = "./details_madeli/index.html";
+}
+
+function pageReDirectItems() {
+    window.location.href = "../index.html";
+}
