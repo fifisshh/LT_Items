@@ -89,13 +89,14 @@ $(".btn-cart-close").click(function() {
 
 
 // 商品分頁-商品成分
-$(".wrapper1-ingre, .wrapper2-odinfo").fadeOut(0);
+$(".wrapper1-ingre").fadeOut(0);
 $(".box1-ingre").fadeOut(0);
 $(".item-ingre").click(function() {
     $(".wrapper1-ingre").fadeIn(500);
     $(".box1-ingre").fadeIn(300);
 });
 
+// 商品分頁-訂購須知
 $(".wrapper2-odinfo").fadeOut(0);
 $(".box2-odinfo").fadeOut(0);
 $(".odinfo").click(function() {
@@ -136,9 +137,43 @@ $(".item-close").click(function() {
 //   }
 
 function pageDirectToMadi() {
-    window.location.href = "./details_madeli/index.html";
+    window.location.href = "/details/details_madeli/index.html";
+}
+function pageDirectToCorna() {
+    window.location.href = "/details/details_corna/index.html";
+}
+function pageDirectToBrown() {
+    window.location.href = "/details/details_brown/index.html";
+}
+function pageDirectToLemon() {
+    window.location.href = "/details/details_lemontart/index.html";
+}
+function pageDirectToCheese() {
+    window.location.href = "/details/details_cheese/index.html";
+}
+function pageDirectToChocochz() {
+    window.location.href = "/details/details_chocochz/index.html";
+}
+function pageDirectToMisu() {
+    window.location.href = "/details/details_misu/index.html";
+}
+function pageDirectToChoco6() {
+    window.location.href = "/details/details_6choco/index.html";
+}
+function pageDirectToBlack6() {
+    window.location.href = "/details/details_6black/index.html";
 }
 
-function pageReDirectItems() {
-    window.location.href = "../index.html";
+// 回到各分頁
+function pageReDirectItems_warm() {
+    window.location.href = "/itemsub/itemsub-warm/index.html#toTop";
+}
+function pageReDirectItems_cold() {
+    window.location.href = "/itemsub/itemsub-cold/index.html#toTop";
+}
+function pageReDirectItems_set() {
+    window.location.href = "/itemsub/itemsub-set/index.html#toTop";
+}
+function pageReDirectItems_six() {
+    window.location.href = "/itemsub/itemsub-six/index.html#toTop";
 }

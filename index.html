@@ -28,12 +28,12 @@
             </div>
             <!-- 導覽列項目-訂單相關 -->
             <div class="order">
-                <a href="#!"><span></span><img src="../img/account.png" alt="member"></a>
-                <a href="#!"><span></span><img src="../img/cart.png" alt="cart"></a>
+                <a href="#!"><span></span><img src="./img/account.png" alt="member"></a>
+                <a href="#!"><span></span><img src="./img/cart.png" alt="cart"></a>
             </div>
             <div class="icon">
-                <a href="#!"><img src="../img/LT_FB.png" alt="FB"></a>
-                <a href="#!"><img src="../img/LT_IG.png" alt="IG"></a>
+                <a href="#!"><img src="./img/LT_FB.png" alt="FB"></a>
+                <a href="#!"><img src="./img/LT_IG.png" alt="IG"></a>
             </div>
         </nav>
 
@@ -42,9 +42,9 @@
         <section class="banner"></section>
 
         <div class="title" id="toTop">
-            <img src="../img/left-rib.png" alt="左緞帶">
+            <img src="./img/left-rib.png" alt="左緞帶">
             <h1>甜點圖鑑</h1>
-            <img src="../img/right-rib.png" alt="右緞帶">
+            <img src="./img/right-rib.png" alt="右緞帶">
             <div class="count">
                 <h3>已上市</h3>
                 <span class="n-item n-item1">0<span></span></span>
@@ -56,10 +56,10 @@
 
         <ul class="category">
             <li> <a href="#!" class="list" id="home" data-gte-target="toTop" data-gte-offset="0">全部商品</a></li>
-            <li> <a href="#!" class="list" data-gte-target="toTop" data-gte-offset="0">常溫甜點</a></li>
-            <li> <a href="#!" class="list" data-gte-target="toTop" data-gte-offset="0">冷藏甜點</a></li>
-            <li> <a href="#!" class="list" data-gte-target="toTop" data-gte-offset="0">精美禮盒</a></li>
-            <li> <a href="#!" class="list" data-gte-target="toTop" data-gte-offset="0">六寸蛋糕</a></li>
+            <li> <a href="./itemsub/itemsub-warm/index.html#toTop" class="list" data-gte-target="toTop" data-gte-offset="0">常溫甜點</a></li>
+            <li> <a href="./itemsub/itemsub-cold/index.html#toTop" class="list" data-gte-target="toTop" data-gte-offset="0">冷藏甜點</a></li>
+            <li> <a href="./itemsub/itemsub-set/index.html#toTop" class="list" data-gte-target="toTop" data-gte-offset="0">精美禮盒</a></li>
+            <li> <a href="./itemsub/itemsub-six/index.html#toTop" class="list" data-gte-target="toTop" data-gte-offset="0">六寸蛋糕</a></li>
         </ul>
 
         <div class="item-box">
@@ -86,7 +86,7 @@
                 <div class="triangle">
                     <h5>002</h5>
                 </div>
-                <img src="./img//cona-itemsub.png" alt="可娜麗" class="pic2">
+                <img src="./img/cona-itemsub.png" alt="可娜麗" class="pic2">
                 <h3>可娜麗</h3>
                 <h4>NT$70</h4>
                 <div class="favor">
@@ -94,9 +94,9 @@
                 </div>
                 <div class="shadow">
                     <h6>天使の鈴</h6>
-                    <p>香草莢｜萊姆酒<br>外殼焦脆、內層為柔軟的蜂巢狀組織</p>
+                    <p>香草莢｜萊姆酒<br>外殼焦脆、內層柔軟</p>
                     <div class="inner">
-                        <div class="btn">DETAILS</div>
+                        <div class="btn" onclick="pageDirectToCorna()">DETAILS</div>
                     </div>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                 <div class="shadow">
                     <h6>小甜甜...威</h6>
                     <p>核桃｜滿滿核桃｜<br>70% / 80%黑巧克力</p>
-                    <div class="inner">
+                    <div class="inner" onclick="pageDirectToBrown()">
                         <div class="btn">DETAILS</div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                     <h6>冷藏甜點の冠</h6>
                     <p>檸檬原汁｜法國發酵奶油｜<br>搭配酥脆杏仁沙布列塔皮</p>
                     <div class="inner">
-                        <div class="btn">DETAILS</div>
+                        <div class="btn" onclick="pageDirectToLemon()">DETAILS</div>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                     <h6>乳酪控首選</h6>
                     <p>手指餅乾碎｜奶油乳酪｜<br>帶籽覆盆莓果醬｜消化底餅乾</p>
                     <div class="inner">
-                        <div class="btn">DETAILS</div>
+                        <div class="btn" onclick=" pageDirectToCheese()">DETAILS</div>
                     </div>
                 </div>
             </div>
@@ -168,7 +168,7 @@
                     <h6>乳酪好朋友</h6>
                     <p>OREO餅乾碎｜奶油乳酪｜<br>黑巧克力｜OREO消化底餅乾</p>
                     <div class="inner">
-                        <div class="btn">DETAILS</div>
+                        <div class="btn" onclick="pageDirectToChocochz()">DETAILS</div>
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@
                     <h6>義式經典の甜</h6>
                     <p>手指餅乾｜濃縮咖啡｜咖啡酒｜<br> 馬斯卡彭起司｜義式蛋白霜</p>
                     <div class="inner">
-                        <div class="btn">DETAILS</div>
+                        <div class="btn" onclick="pageDirectToMisu()">DETAILS</div>
                     </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@
                     <h6>6寸の糕</h6>
                     <p>巧克力卡士達慕斯｜榛果慕斯｜<br>焦糖核桃碎片｜巧克力海綿蛋糕</p>
                     <div class="inner">
-                        <div class="btn">DETAILS</div>
+                        <div class="btn" onclick="pageDirectToChoco6()">DETAILS</div>
                     </div>
                 </div>
             </div>
@@ -222,12 +222,11 @@
                     <h6>巧の味</h6>
                     <p>70%黑巧克力卡士達慕斯｜<br> 酒漬 / 糖漬櫻桃｜巧克力海綿蛋糕</p>
                     <div class="inner">
-                        <div class="btn">DETAILS</div>
+                        <div class="btn" onclick="pageDirectToBlack6()">DETAILS</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- footer -->
     <footer>
