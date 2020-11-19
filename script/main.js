@@ -145,31 +145,59 @@ function pageDirectToMadi() {
 }
 
 function pageDirectToCornaH() {
-    window.location.href = "./../details/details_corna/index.html";
+    window.location.href = "./details/details_corna/index.html";
 }
 function pageDirectToCorna() {
     window.location.href = "../../details/details_corna/index.html";
 }
+
+function pageDirectToBrownH() {
+    window.location.href = "./details/details_brown/index.html";
+}
 function pageDirectToBrown() {
-    window.location.href = "/details/details_brown/index.html";
+    window.location.href = "../../details/details_brown/index.html";
+}
+
+function pageDirectToLemonH() {
+    window.location.href = "./details/details_lemontart/index.html";
 }
 function pageDirectToLemon() {
-    window.location.href = "/details/details_lemontart/index.html";
+    window.location.href = "../../details/details_lemontart/index.html";
+}
+
+function pageDirectToCheeseH() {
+    window.location.href = "./details/details_cheese/index.html";
 }
 function pageDirectToCheese() {
-    window.location.href = "/details/details_cheese/index.html";
+    window.location.href = "../../details/details_cheese/index.html";
+}
+
+function pageDirectToChocochzH() {
+    window.location.href = "./details/details_chocochz/index.html";
 }
 function pageDirectToChocochz() {
-    window.location.href = "/details/details_chocochz/index.html";
+    window.location.href = "../../details/details_chocochz/index.html";
+}
+
+function pageDirectToMisuH() {
+    window.location.href = "./details/details_misu/index.html";
 }
 function pageDirectToMisu() {
-    window.location.href = "/details/details_misu/index.html";
+    window.location.href = "../../details/details_misu/index.html";
+}
+
+function pageDirectToChoco6H() {
+    window.location.href = "./details/details_6choco/index.html";
 }
 function pageDirectToChoco6() {
-    window.location.href = "/details/details_6choco/index.html";
+    window.location.href = "../../details/details_6choco/index.html";
+}
+
+function pageDirectToBlack6H() {
+    window.location.href = "./details/details_6black/index.html";
 }
 function pageDirectToBlack6() {
-    window.location.href = "/details/details_6black/index.html";
+    window.location.href = "../../details/details_6black/index.html";
 }
 
 // 回到各分頁
