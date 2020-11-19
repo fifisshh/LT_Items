@@ -136,8 +136,16 @@ $(".item-close").click(function() {
     // });  
 //   }
 
+// Home click and category click
+function pageDirectToMadiH() {
+    window.location.href = "../details/details_madeli/index.html";
+}
 function pageDirectToMadi() {
     window.location.href = "../../details/details_madeli/index.html";
+}
+
+function pageDirectToCornaH() {
+    window.location.href = "../../details/details_corna/index.html";
 }
 function pageDirectToCorna() {
     window.location.href = "../../details/details_corna/index.html";
