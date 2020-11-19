@@ -137,10 +137,10 @@ $(".item-close").click(function() {
 //   }
 
 function pageDirectToMadi() {
-    window.location.href = "/details/details_madeli/index.html";
+    window.location.href = "../../details/details_madeli/index.html";
 }
 function pageDirectToCorna() {
-    window.location.href = "/details/details_corna/index.html";
+    window.location.href = "../../details/details_corna/index.html";
 }
 function pageDirectToBrown() {
     window.location.href = "/details/details_brown/index.html";
@@ -166,10 +166,10 @@ function pageDirectToBlack6() {
 
 // 回到各分頁
 function pageReDirectItems_warm() {
-    window.location.href = "/itemsub/itemsub-warm/index.html#toTop";
+    window.location.href = "../../itemsub/itemsub-warm/index.html#toTop";
 }
 function pageReDirectItems_cold() {
-    window.location.href = "/itemsub/itemsub-cold/index.html#toTop";
+    window.location.href = "../../itemsub/itemsub-cold/index.html#toTop";
 }
 function pageReDirectItems_set() {
     window.location.href = "/itemsub/itemsub-set/index.html#toTop";
