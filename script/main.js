@@ -208,8 +208,8 @@ function pageReDirectItems_cold() {
     window.location.href = "../../itemsub/itemsub-cold/index.html#toTop";
 }
 function pageReDirectItems_set() {
-    window.location.href = "/itemsub/itemsub-set/index.html#toTop";
+    window.location.href = "../../itemsub/itemsub-set/index.html#toTop";
 }
 function pageReDirectItems_six() {
-    window.location.href = "/itemsub/itemsub-six/index.html#toTop";
+    window.location.href = "../../itemsub/itemsub-six/index.html#toTop";
 }
